@@ -11,6 +11,6 @@ jobs:
         with:
           access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
           secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          region: eu-west-3
+          region: eu-west-1
           local-image: algotest:${{ github.sha }}
           image: algotest:${{ github.sha }}, algotest:latest
