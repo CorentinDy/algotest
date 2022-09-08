@@ -3,6 +3,7 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v1
       - run: docker build --tag algotest:${{ github.sha }} .
       - name: Push to ECR
         id: ecr
